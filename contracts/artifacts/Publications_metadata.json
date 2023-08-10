@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "_authors",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "_institution",
+						"type": "string"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_citations",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_citedBy",
+						"type": "address[]"
+					},
+					{
+						"internalType": "string",
+						"name": "_category",
+						"type": "string"
+					}
+				],
+				"name": "createPaper",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "papers",
+				"outputs": [
+					{
+						"internalType": "contract PaperContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Publications.sol": "Publications"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Paper.sol": {
+			"keccak256": "0x1ca1df9ededa957d3eca2f81ab4546f732370119083065d0dac31e1ffbe26844",
+			"license": "GNU AGPLv3",
+			"urls": [
+				"bzz-raw://c474c6bef30098e24916e1ebd25e28b0a374b51d37d93263a1320ac744b50157",
+				"dweb:/ipfs/QmR1PAHY56UZsoXirhHuyJP4Q4PxT7siZWSRfwLzKdivEo"
+			]
+		},
+		"contracts/Publications.sol": {
+			"keccak256": "0x1e113e9a822f4dcb4db4d87a8f9717dc8c61ceca0c8472a710a547a11d70b8e2",
+			"license": "GNU AGPLv3",
+			"urls": [
+				"bzz-raw://51c5e4f315ee561a1f662a834ac6801c966554bb2f76cc2fe69af4c79c1dc19d",
+				"dweb:/ipfs/QmR3rCa7o7PYDyBBWYHd5j6ijr2kFvKHeoL6UkhTqWPwem"
+			]
+		}
+	},
+	"version": 1
+}
