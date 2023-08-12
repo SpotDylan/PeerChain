@@ -1,0 +1,12 @@
+/* #paperCard {
+  text-decoration: none;
+} */
+
+.cardLink {
+  text-decoration: none;
+}
+
+.cardLink > div:hover {
+  transition: background-color 0.2s ease-in-out;
+  background-color: lightgray;
+}
