@@ -4,7 +4,7 @@ import "./PaperCard.css";
 
 const PaperCard = ({ title, authors, description, cardId }) => {
   return (
-    <a className={"cardLink"} href={"#" + cardId}>
+    <a className={"cardLink"} href={"/card_page/" + cardId}>
       <Card style={{ width: "18rem" }} id={"paperCard"} className={"mb-3"}>
         <Card.Img
           variant="top"
