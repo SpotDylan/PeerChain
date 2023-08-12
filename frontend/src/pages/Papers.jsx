@@ -1,44 +1,17 @@
 import React from "react";
 import PaperCard from "../components/PaperCard";
 import { Container, Row, Col } from "react-bootstrap";
+import { papers } from "../../papersInfo";
 
 const Papers = () => {
-  const cards = [
-    {
-      authors: ["Troy", "Dylan", "Jacob"],
-      description: "Lorem Ipsum",
-      title: "LK-99 Superconductor",
-    },
-    {
-      authors: ["Troy", "Dylan", "Jacob"],
-      description: "Lorem Ipsum",
-      title: "LK-99 Superconductor",
-    },
-    {
-      authors: ["Troy", "Dylan", "Jacob"],
-      description: "Lorem Ipsum",
-      title: "LK-99 Superconductor",
-    },
-    {
-      authors: ["Troy", "Dylan", "Jacob"],
-      description: "Lorem Ipsum",
-      title: "LK-99 Superconductor",
-    },
-    {
-      authors: ["Troy", "Dylan", "Jacob"],
-      description: "Lorem Ipsum",
-      title: "LK-99 Superconductor",
-    },
-  ];
-
   return (
     <>
       <Container fluid>
         <Row>
-          {cards.map((card, idx) => {
+          {papers.map((paper, idx) => {
             return (
               <Col md="auto">
-                <PaperCard {...card} cardId={idx} />
+                <PaperCard {...paper} cardId={idx} />
               </Col>
             );
           })}

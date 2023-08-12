@@ -9,6 +9,7 @@ import Navigation from "./components/Navbar.jsx";
 import Papers from "./pages/papers.jsx";
 import Review from "./pages/Review.jsx";
 import { MoralisProvider } from "react-moralis";
+import { useParams } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
