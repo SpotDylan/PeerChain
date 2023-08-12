@@ -1,0 +1,153 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "_authors",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "_institution",
+						"type": "string"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_citations",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_citedBy",
+						"type": "address[]"
+					},
+					{
+						"internalType": "string",
+						"name": "_category",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_paper",
+						"type": "address"
+					}
+				],
+				"name": "cite",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "citedBy",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "paper",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "institution",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "revealData",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "citingPaper",
+						"type": "address"
+					}
+				],
+				"name": "updateCitedBy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Publication.sol": "Publication"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Publication.sol": {
+			"keccak256": "0xd4db35348be6df5a4c4b6f9cad62f874aafde029b400b4e4e81461ba0cd86429",
+			"license": "GNU AGPLv3",
+			"urls": [
+				"bzz-raw://73f26ba08a42ca083b7c1b769f5e92530b5f1baee072ecc11261b2ef598a1d5b",
+				"dweb:/ipfs/QmWbvBFmTX9KcryDUMk1CCG4qyY5iDBwUSybqsLzgWJg2S"
+			]
+		}
+	},
+	"version": 1
+}
